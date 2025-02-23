@@ -26,6 +26,7 @@ export default function CallToAction() {
                 animation.current.speed = 1;
             }
         }
+        
     }, [slowDownAnimation]);
 
     return (
