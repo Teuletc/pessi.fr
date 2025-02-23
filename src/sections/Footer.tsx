@@ -1,5 +1,5 @@
 import Image from "next/image";
-import siteLogo from "@/assets/images/logo.svg";
+import logoImage from "@/assets/images/logo.png";
 
 const footerLinks = [
     { href: "#", label: "Contact" },
@@ -9,11 +9,11 @@ const footerLinks = [
 
 export default function Footer() {
     return (
-        <section className="py-16">
+        <section>
             <div className="container">
                 <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-6">
                     <div>
-                        <Image src={siteLogo} alt="Layers Logo" />
+                        <Image src={logoImage} alt="Layers Logo" className="scale-[0.2]" />
                     </div>
                     <div>
                         <nav className="flex gap-6">

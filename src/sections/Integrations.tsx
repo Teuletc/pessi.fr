@@ -1,42 +1,48 @@
 import Tag from "@/components/Tag";
-import figmaIcon from "@/assets/images/figma-logo.svg";
-import notionIcon from "@/assets/images/notion-logo.svg";
-import slackIcon from "@/assets/images/slack-logo.svg";
-import relumeIcon from "@/assets/images/relume-logo.svg";
-import framerIcon from "@/assets/images/framer-logo.svg";
-import githubIcon from "@/assets/images/github-logo.svg";
+import pessiIcon from "@/assets/images/pessi-icon.webp";
+import penaldoIcon from "@/assets/images/penaldo-logo.jpg";
+import moappeIcon from "@/assets/images/moappe-logo.jpeg";
+import neymemeIcon from "@/assets/images/neymeme-logo.jpeg";
+import suiiIcon from "@/assets/images/suii-logo.jpeg";
+import goatIcon from "@/assets/images/goat-logo.jpeg";
 import IntegrationColumn from "@/components/IntegrationColumn";
 
 const integrations = [
     {
-        name: "Figma",
-        icon: figmaIcon,
-        description: "Figma is a collaborative interface design tool.",
+        name: "Pessi",
+        icon: pessiIcon,
+        description:
+            "Pessi, le maître des penalties manqués et des occasions ratées.",
     },
     {
-        name: "Notion",
-        icon: notionIcon,
-        description: "Notion is an all-in-one workspace for notes and docs.",
+        name: "Penaldo",
+        icon: penaldoIcon,
+        description:
+            "Penaldo, spécialiste des plongeons et des tirs au but discutables.",
     },
     {
-        name: "Slack",
-        icon: slackIcon,
-        description: "Slack is a powerful team communication platform.",
+        name: "Moappé",
+        icon: moappeIcon,
+        description:
+            "Moappé, connu pour sa vitesse fulgurante... vers les hors-jeux.",
     },
     {
-        name: "Relume",
-        icon: relumeIcon,
-        description: "Relume is a no-code website builder and design system.",
+        name: "Paymar",
+        icon: neymemeIcon,
+        description:
+            "Paymar, expert en roulades dramatiques et en blessures imaginaires.",
     },
     {
-        name: "Framer",
-        icon: framerIcon,
-        description: "Framer is a professional website prototyping tool.",
+        name: "Suii",
+        icon: suiiIcon,
+        description:
+            "Suii, célébrant chaque but comme s'il avait gagné la Coupe du Monde.",
     },
     {
-        name: "GitHub",
-        icon: githubIcon,
-        description: "GitHub is the leading platform for code collaboration.",
+        name: "GOAT",
+        icon: goatIcon,
+        description:
+            "GOAT, le 'Greatest Of All Trolls', légende des mèmes footballistiques.",
     },
 ];
 
@@ -44,20 +50,20 @@ export type IntegrationsType = typeof integrations;
 
 export default function Integrations() {
     return (
-        <section className="py-24 overflow-hidden ">
+        <section className="py-24 overflow-hidden">
             <div className="container">
                 <div className="grid lg:grid-cols-2 items-center lg:gap-16">
                     <div>
-                        <Tag>Integration</Tag>
+                        <Tag>analyse</Tag>
                         <h2 className="text-6xl font-medium mt-6">
-                            Plays well with{" "}
-                            <span className="text-lime-400 ">others</span>
+                            La culture juste et précise{" "}
+                            <span className="text-lime-400">du football</span>
                         </h2>
 
-                        <p className="text-white/50 mt-4 text-lg ">
-                            Layers seamessly connects with your favourite tools
-                            and platforms. It's easy to plug into any workflow
-                            and collaborate platforms.
+                        <p className="text-white/50 mt-4 text-lg">
+                            Découvrez nos analyses parodiques des stars du
+                            ballon rond, où chaque dribble raté et chaque
+                            plongeon théâtral sont passés au crible.
                         </p>
                     </div>
                     <div>

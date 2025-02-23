@@ -1,6 +1,6 @@
 "use client";
 
-import logoImage from "@/assets/images/logo.svg";
+import logoImage from "@/assets/images/logo.png";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Button from "@/components/Button";
@@ -19,18 +19,16 @@ export default function Navbar() {
 
     return (
         <>
-            <section className="py-4 lg:py-8 fixed w-full top-0 z-50 ">
-                <div className="container max-w-5xl">
-                    <div className="border border-white/15 rounded-[27px] lg:rounded-full bg-neutral-950/70 backdrop-blur">
-                        <figure className="grid grid-cols-2 lg:grid-cols-3  py-2 lg:px-2 px-4  items-center ">
-                            <div>
-                                <Image
-                                    src={logoImage}
-                                    alt="layer logo"
-                                    className="h-9 w-auto md:h-auto"
-                                />
-                            </div>
-                            <div className="hidden lg:flex justify-center items-center ">
+            <section className="py-4 lg:py-8 fixed w-full flex justify-center items-center top-0 z-50 ">
+                <div className="lg:max-w-3xl max-w-5xl">
+                    <div className="border border-white/15 rounded-full lg:rounded-full bg-neutral-950/70 backdrop-blur">
+                        <figure className="flex justify-center items-center lg:max-h-24 px-8 lg:px-0 py-2 lg:py-0">
+                            <Image
+                                src={logoImage}
+                                alt="layer logo"
+                                className="h-9 w-auto md:h-auto lg:scale-50 scale-110"
+                            />
+                            {/* <div className="hidden lg:flex justify-center items-center ">
                                 <nav className="flex gap-6 font-medium ">
                                     {navLinks.map((each) => (
                                         <a href={each.href} key={each.href}>
@@ -38,8 +36,8 @@ export default function Navbar() {
                                         </a>
                                     ))}
                                 </nav>
-                            </div>
-                            <div className="flex justify-end gap-4">
+                            </div> */}
+                            {/* <div className="flex justify-end gap-4">
                                 <button
                                     type="button"
                                     onClick={() => setIsOpen(!isOpen)}
@@ -85,7 +83,7 @@ export default function Navbar() {
                                 >
                                     Signup
                                 </Button>
-                            </div>
+                            </div> */}
                         </figure>
 
                         <AnimatePresence>

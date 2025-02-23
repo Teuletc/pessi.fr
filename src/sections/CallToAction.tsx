@@ -29,7 +29,7 @@ export default function CallToAction() {
     }, [slowDownAnimation]);
 
     return (
-        <section className="py-24">
+        <section className="py-12">
             <div className="overflow-x-clip p-4 flex">
                 <motion.div
                     ref={scope}
@@ -42,7 +42,7 @@ export default function CallToAction() {
                             <span className="text-lime-400 text-7xl ">
                                 &#10038;
                             </span>
-                            <span className={twMerge(slowDownAnimation && "text-lime-400")}>Try it for free</span>
+                            <span className={twMerge(slowDownAnimation && "text-lime-400")}>Mira Bobo</span>
                         </div>
                     ))}
                 </motion.div>

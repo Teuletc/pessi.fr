@@ -1,34 +1,28 @@
 "use client";
 
-import quantumLogo from "@/assets/images/quantum.svg";
-import acmeLogo from "@/assets/images/acme-corp.svg";
-import echoValleyLogo from "@/assets/images/echo-valley.svg";
-import pulseLogo from "@/assets/images/pulse.svg";
-import outsideLogo from "@/assets/images/outside.svg";
-import apexLogo from "@/assets/images/apex.svg";
-import celestialLogo from "@/assets/images/celestial.svg";
-import twiceLogo from "@/assets/images/twice.svg";
+import psg from "@/assets/images/psg.png";
+import petioli from "@/assets/images/petioli.png";
+import Inter_Miami_CF_logo from "@/assets/images/Inter_Miami_CF_logo.png";
+import newellsoldboyslogo from "@/assets/images/newells-old-boys-logo.png";
+import fcb from "@/assets/images/fcb.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 
 const logos = [
-    { name: "Quantum", image: quantumLogo },
-    { name: "Acme Corp", image: acmeLogo },
-    { name: "Echo Valley", image: echoValleyLogo },
-    { name: "Pulse", image: pulseLogo },
-    { name: "Outside", image: outsideLogo },
-    { name: "Apex", image: apexLogo },
-    { name: "Celestial", image: celestialLogo },
-    { name: "Twice", image: twiceLogo },
+    { name: "psg", image: psg },
+    { name: "fcb", image: fcb },
+    { name: "Inter Miami CF", image: Inter_Miami_CF_logo },
+    { name: "Newell's Old Boys", image: newellsoldboyslogo },
+    { name: "petioli", image: petioli },
 ];
 
 export default function LogoTicker() {
     return (
-        <section className="py-24 overflow-x-clip">
+        <section className="overflow-x-clip">
             <div className="container">
                 <h3 className="text-center text-white/50 text-xl">
-                    Already chosen by these market leaders
+                    Ils nous font confiance
                 </h3>
                 <div className="flex overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <motion.div
@@ -49,6 +43,9 @@ export default function LogoTicker() {
                                         src={each.image}
                                         alt={each.name}
                                         key={each.name}
+                                        width={150}
+                                        height={150}
+                                        className="grayscale-1"
                                     />
                                 ))}
                             </React.Fragment>
