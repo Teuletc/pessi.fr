@@ -10,8 +10,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Modern Design Tool Landing Page",
-    description: "Created with the help of Frontend Tribe",
+    title: "PESSI.fr",
+    description:
+        "PESSI.fr, le site de référence pour les mèmes footballistiques.",
+    icons: {
+        icon: "@/assets/images/logo.png",
+    },
 };
 
 export default function RootLayout({
